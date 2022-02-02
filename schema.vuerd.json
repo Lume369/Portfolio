@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -44.16666491164108,
+    "scrollTop": -62.49999751647319,
     "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "portfolio-db",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -93,7 +93,30 @@
             "id": "5c778032-b44e-4f8f-b1d6-45eb2d8cf511"
           },
           {
-            "name": "start_year_month",
+            "name": "company",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "e83e9691-9eee-4087-9f2f-c3dd74059ad9"
+          },
+          {
+            "name": "start_date",
             "comment": "",
             "dataType": "DATE",
             "default": "",
@@ -108,7 +131,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 103.16259765625,
+              "widthName": 60,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
@@ -116,7 +139,7 @@
             "id": "9405031c-1a3a-402e-b714-3d5dfd423007"
           },
           {
-            "name": "end_year_month",
+            "name": "end_date",
             "comment": "",
             "dataType": "DATE",
             "default": "",
@@ -131,7 +154,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 99.56982421875,
+              "widthName": 60,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
@@ -209,10 +232,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 25.0001,
           "top": 60.0003,
-          "zIndex": 65,
+          "zIndex": 152,
           "widthName": 60,
           "widthComment": 60
         },
@@ -401,7 +424,7 @@
             "id": "b9feefb7-fef0-44cd-abab-0f9a33c09053"
           },
           {
-            "name": "id",
+            "name": "project_id",
             "comment": "",
             "dataType": "INT",
             "default": "",
@@ -428,7 +451,7 @@
           "active": false,
           "left": 536.6671,
           "top": 304.167,
-          "zIndex": 137,
+          "zIndex": 142,
           "widthName": 90.15625,
           "widthComment": 60
         },
@@ -556,7 +579,7 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 457.5002,
           "top": 78.3333,
           "zIndex": 138,
