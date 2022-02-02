@@ -11,8 +11,8 @@ router.get('/', (req, res) => {
 
 		//Using the connection.
 		//Change the query const according to your needs
-		const query = 'SELECT * FROM users'
-		connection.query(query, (err, data) => {
+		const sql = 'SELECT * FROM jobs'
+		connection.query(sql, (err, data) => {
 			if (err) {
 				console.error(err);
 				res.status(500).send('Server error, could not fetch from DB');
