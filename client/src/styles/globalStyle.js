@@ -9,6 +9,16 @@ const GlobalStyle = createGlobalStyle`
 		sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+
+		margin: 0;
+	};
+
+	li {
+		list-style: none;
+	};
+
+	a {
+		text-decoration: none;
 	}
 
 `;

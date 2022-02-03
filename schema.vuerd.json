@@ -208,7 +208,7 @@
             "id": "63fc28cb-a00d-466f-aea1-fffd212c7487"
           },
           {
-            "name": "job_position",
+            "name": "job_location",
             "comment": "",
             "dataType": "VARCHAR(255)",
             "default": "",
@@ -235,7 +235,7 @@
           "active": true,
           "left": 25.0001,
           "top": 60.0003,
-          "zIndex": 152,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 60
         },
@@ -343,7 +343,7 @@
           "active": false,
           "left": 53.3327,
           "top": 303.3341,
-          "zIndex": 134,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
@@ -451,7 +451,7 @@
           "active": false,
           "left": 536.6671,
           "top": 304.167,
-          "zIndex": 142,
+          "zIndex": 3,
           "widthName": 90.15625,
           "widthComment": 60
         },
@@ -582,7 +582,7 @@
           "active": false,
           "left": 457.5002,
           "top": 78.3333,
-          "zIndex": 138,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60
         },

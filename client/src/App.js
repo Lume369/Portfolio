@@ -10,10 +10,10 @@ const App = () => {
 	return (
 		<>
 			<header>
-				<h1>Starter template</h1>
+			<Navbar/>
 			</header>
 
-			<Navbar/>
+			
 
 			<Switch>
 				<Route exact path="/" component={Home}/>

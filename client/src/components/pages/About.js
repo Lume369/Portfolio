@@ -1,12 +1,16 @@
 import {useContext} from 'react';
-import {context} from "../../context/MyProvider";
+import {nanoid} from "nanoid";
+import {context} from "../../context/APIProvider";
+import {context as myProviderContext} from "../../context/MyProvider";
 import H2 from "../atoms/H2";
 import P from "../atoms/P";
 import logger from "../../utils/logger";
 
+
 const About = () => {
 
-	const myContext = useContext(context);
+	const APIContext = useContext(context);
+	const myContext = useContext(myProviderContext);
 
 	return (
 		<main>
@@ -27,6 +31,20 @@ const About = () => {
 			>
 				Log
 			</button>
+			{APIContext.usersIsFetched
+				? <ol>
+					{APIContext.usersData.data.map((element) => (
+						<li key={nanoid()}>
+								<span>
+									{`NAME: ${element.job_name} - `}
+								</span>
+							<span>
+									{`EMAIL: ${element.start_date}`}
+								</span>
+						</li>
+					))}
+				</ol>
+				: <p>loading...</p>}
 		</main>
 
 	)
