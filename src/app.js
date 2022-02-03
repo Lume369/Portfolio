@@ -8,6 +8,7 @@ const path = require('path')
 app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
 
+app.use('/', usersRouter)
 app.use('/api/', testRouter); // Handles GET requests to /api, sends back "API is running"
 app.use('/api/about', usersRouter);
 app.use('/api/jobs', usersRouter); // Handles GET request to /api/users, sends back everything in the DB users table
