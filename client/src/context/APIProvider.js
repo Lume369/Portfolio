@@ -8,8 +8,8 @@ const APIProvider = (props) => {
 
 	const {isFetched: usersIsFetched, error: usersError, data: usersData} = useQuery(
 		// query key: an array with a name and a variable used in the endpoint
-		"users",
-		() => axios.get('/api/users'),
+		"jobs",
+		() => axios.get('/api/jobs'),
 		{
 			enabled: true,
 		}
