@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
 
 app.use('/api/', testRouter); // Handles GET requests to /api, sends back "API is running"
-
-app.use('/api/users', usersRouter); // Handles GET request to /api/users, sends back everything in the DB users table
+app.use('/api/about', usersRouter);
+app.use('/api/jobs', usersRouter); // Handles GET request to /api/users, sends back everything in the DB users table
 
 // Serve static assets if in production.
 if (process.env.NODE_ENV === 'production') {

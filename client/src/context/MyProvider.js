@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export const context = React.createContext();
+export const myProviderContext = React.createContext();
 
 const MyProvider = (props) => {
 
@@ -8,12 +8,12 @@ const MyProvider = (props) => {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<context.Provider value={{	
+		<myProviderContext.Provider value={{	
 									count, setCount,
 									isActive, setIsActive
 								}}>
 			{props.children}
-		</context.Provider>
+		</myProviderContext.Provider>
 	)
 };
 

@@ -8,6 +8,7 @@ const Nav = styled.nav`
 
 	@media only screen and (max-width: 768px) {
 		display: flex;
+		position: fixed;
 	}
 `;
 

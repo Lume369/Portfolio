@@ -1,16 +1,16 @@
 import {Link} from "react-router-dom";
-import Bar from "../atoms/Bar";
+import Bar from "../atoms/Navigation/Bar";
 import Hamburger from "../atoms/Navigation/Hamburger";
 import Nav from "../atoms/Navigation/Nav";
 import NavList from "../atoms/Navigation/NavList";
 import UlNav from "../atoms/Navigation/UlNav";
 import { useContext } from "react";
-import {context} from "../../context/MyProvider";
+import {myProviderContext} from "../../context/MyProvider";
 
 
 
 const Navbar = () => {
-	const {isActive, setIsActive} = useContext(context)
+	const {isActive, setIsActive} = useContext(myProviderContext)
 
 	return (
 		<Nav>
