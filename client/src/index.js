@@ -8,7 +8,6 @@ import {BrowserRouter} from "react-router-dom";
 import Theme from "./styles/Theme";
 import GlobalStyle from "./styles/globalStyle";
 import {QueryClient, QueryClientProvider} from 'react-query';
-import {createBrowserHistory as history} from "history";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +16,7 @@ ReactDOM.render(
 		<QueryClientProvider client={queryClient}>
 			<MyProvider>
 				<APIProvider>
-					<BrowserRouter history={history}>
+					<BrowserRouter>
 						<Theme>
 							<GlobalStyle/>
 							<App/>

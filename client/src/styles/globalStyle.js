@@ -2,6 +2,10 @@ import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   
+	html {
+		height: 100%;
+	};
+
 	body {
 		line-height: 1;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
 		-moz-osx-font-smoothing: grayscale;
 
 		margin: 0;
+		height: 100%;
 	};
 
 	li {

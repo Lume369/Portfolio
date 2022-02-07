@@ -4,11 +4,12 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/organisms/Footer";
+import AppStyle from "./components/atoms/AppStyle";
 
 const App = () => {
 
 	return (
-		<>
+		<AppStyle>
 			<header>
 				<Navbar/>
 			</header>
@@ -22,7 +23,7 @@ const App = () => {
 			</Switch>
 
 			<Footer/>
-		</>
+		</AppStyle>
 	)
 };
 

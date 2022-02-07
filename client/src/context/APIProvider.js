@@ -6,7 +6,7 @@ export const context = createContext();
 
 const APIProvider = (props) => {
 
-	const {isFetched: usersIsFetched, error: usersError, data: usersData} = useQuery(
+	const {isFetched: jobIsFetched, error: jobError, data: jobData} = useQuery(
 		// query key: an array with a name and a variable used in the endpoint
 		"jobs",
 		() => axios.get('/api/jobs'),
@@ -16,7 +16,7 @@ const APIProvider = (props) => {
 	);
 
 	return (
-		<context.Provider value={{usersIsFetched, usersError, usersData}}>
+		<context.Provider value={{jobIsFetched, jobError, jobData}}>
 			{props.children}
 		</context.Provider>
 	)

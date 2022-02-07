@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
-	position: absolute;
+	display: flex;
 	width: 100%;
-	padding: 20px;
 	background-color: lightgray;
+	justify-self: flex-end;
 `;
 
 export default StyledFooter;
