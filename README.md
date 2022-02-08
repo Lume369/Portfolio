@@ -13,7 +13,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/Lume369/Portfolio/blob/main/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/Lume369/Portfolio" />
+    <img alt="License: MIT" src="https://img.shields.io/github/license/carlosaore/heroku-cleardb-fullstack-starter" />
   </a>
 </p>
 
