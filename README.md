@@ -6,14 +6,14 @@
   <img alt="React Router" src="https://raw.githubusercontent.com/aleen42/badges/master/src/react-router.svg" />
   <br />
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme" target="_blank">
+  <a href="https://github.com/Lume369/Portfolio#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/carlosaore/heroku-cleardb-fullstack-starter/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/Lume369/Portfolio/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/carlosaore/heroku-cleardb-fullstack-starter/blob/main/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/carlosaore/heroku-cleardb-fullstack-starter" />
+  <a href="https://github.com/Lume369/Portfolio/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/Lume369/Portfolio" />
   </a>
 </p>
 
