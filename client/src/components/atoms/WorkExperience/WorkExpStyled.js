@@ -14,7 +14,7 @@ const WorkExpStyled = styled.section`
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
+};
 
 `;
 

@@ -15,8 +15,20 @@ const APIProvider = (props) => {
 		}
 	);
 
+	const {isFetched: projectIsFetched, error: projectError, data: projectData} = useQuery(
+		// query key: an array with a name and a variable used in the endpoint
+		"projects",
+		() => axios.get('/api/projects'),
+		{
+			enabled: true,
+		}
+	);
+
 	return (
-		<context.Provider value={{jobIsFetched, jobError, jobData}}>
+		<context.Provider value={{
+					jobIsFetched, jobError, jobData,
+					projectIsFetched, projectError, projectData,					
+		}}>
 			{props.children}
 		</context.Provider>
 	)

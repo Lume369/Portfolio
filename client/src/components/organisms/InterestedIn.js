@@ -8,6 +8,8 @@ import IntrestedContainer from "../atoms/AboutPage/InterestedContainer";
 import InterestedClickHandler from "../molecules/InterestedClickHandler";
 import WorkExperience from "../molecules/WorkExperience";
 import WorkExpStyled from "../atoms/WorkExperience/WorkExpStyled";
+import ProjectsStyled from "../atoms/ProjectsPage/ProjectsStyled";
+import Projects from "../molecules/Projects";
 
 const InterestedIn = () => {
     const {showContent, setShowContent, content, setContent} = useContext(myProviderContext);
@@ -27,7 +29,7 @@ const InterestedIn = () => {
                 <P>get an overview of my backgroung</P>
             </IntrestedSection>
 
-            {showContent && content === 'workExp' &&
+            {showContent && content === toPass.work &&
                 <WorkExpStyled>
                     <WorkExperience />
                 </WorkExpStyled>
@@ -38,6 +40,12 @@ const InterestedIn = () => {
                 <H3>Projects</H3>
                 <P>take a look at what I'm capable of</P>
             </IntrestedSection>
+
+            {showContent && content === toPass.project &&
+                <ProjectsStyled>
+                    <Projects />
+                </ProjectsStyled>
+            }
 
             <IntrestedSection show={showContent} onClick={() => InterestedClickHandler(showContent, setShowContent, setContent, toPass.education)}>
                 <InterestedImage src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
