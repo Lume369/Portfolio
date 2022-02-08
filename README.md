@@ -17,9 +17,9 @@
   </a>
 </p>
 
-> A full stack apps created with React and Express.
+> A full stack app created with React and Express.
 
-### 🏠 [Homepage](https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme)
+### 🏠 [Homepage](https://github.com/Lume369/Portfolio#readme)
 
 ### ✨ [Live demo](https://frozen-brook-20118.herokuapp.com/)
 
