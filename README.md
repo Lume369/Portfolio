@@ -1,4 +1,4 @@
-<h1 align="center">heroku-cleardb-fullstack-starter</h1>
+<h1 align="center">Portfolio wrapped into an application</h1>
 <p>
   <img alt="JavaScript" src="https://github.com/aleen42/badges/raw/master/src/javascript.svg" />
   <img alt="Node" src="https://badges.aleen42.com/src/node.svg"/>
@@ -17,7 +17,7 @@
   </a>
 </p>
 
-> Create full stack apps with React and Express.<br>Run your client and server with a single command.
+> A full stack apps created with React and Express.
 
 ### 🏠 [Homepage](https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme)
 
