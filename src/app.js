@@ -7,6 +7,7 @@ const projectImageRouter = require('./routes/projectImageRouter');
 const path = require('path');
 
 // global middleware
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
 
