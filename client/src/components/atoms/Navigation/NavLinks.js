@@ -1,6 +1,10 @@
-import styled from "styled-components";
 
-const NavLinks = styled.Link`
-`;
+const NavLinks = {
+		fontSize: "larger",
+        color: "grey",	
+        "&:hover": {
+            color: "green",
+        }	
+};
 
 export default NavLinks;

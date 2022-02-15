@@ -6,7 +6,7 @@ const MyProvider = (props) => {
 
 	const [count, setCount] = useState(0);
 	const [jobData, setJobData] = useState('');
-	const [isActive, setIsActive] = useState(false);
+	const [isShown, setIsShown] = useState(false);
 
 	// Content & show content created for InterestedIn
 	const [content, setContent] = useState('');
@@ -16,7 +16,7 @@ const MyProvider = (props) => {
 		<myProviderContext.Provider value={{	
 									count, setCount,
 									jobData, setJobData,
-									isActive, setIsActive,
+									isShown, setIsShown,
 									content, setContent,
 									showContent, setShowContent
 								}}>

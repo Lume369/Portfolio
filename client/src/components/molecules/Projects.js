@@ -1,19 +1,22 @@
 import { useContext } from "react";
 import { context } from "../../context/APIProvider";
-import { myProviderContext } from "../../context/MyProvider";
+import ProjectImagesSection from "../atoms/ProjectsPage/ProjectImagesSection";
 import ProjectSection from "../atoms/ProjectsPage/ProjectSection";
+import ProjectImage from "../atoms/ProjectsPage/ProjectImage";
+import ProjectContainer from "../atoms/ProjectsPage/ProjectContainer";
+import LeftArrow from "../organisms/LeftArrow";
 
 const Projects = () => {
     const APIContext = useContext(context)
-    const {setShowContent} = useContext(myProviderContext);
+    const handleDragStart = (e) => e.preventDefault();
 
     return (
         <>
             {APIContext.projectIsFetched
-                ? <section>
-                    <button type="button" className="btn-close" aria-label="Close" width='60px' onClick={() => setShowContent(false)} >X</button>
+                ? <ProjectContainer>
+                    <LeftArrow />
                     {APIContext.projectData.data.map((element, index) => (
-                            <ProjectSection key={`${index}369`}>
+                            <ProjectSection className="single-project-wrapper" key={element.id}>
 
                                 {/* project name */}
                                 <h3>
@@ -21,8 +24,13 @@ const Projects = () => {
                                 </h3>  
 
                                 {/* Images of project */}
-                                
-
+                                <ProjectImagesSection className="project-image-section" onDragStart={handleDragStart} >
+                                { APIContext.projectImageData.data.filter(item => item.project_name === element.project_name).map((image, index) => (
+                                        
+                                            <ProjectImage className="project-image" key={index} src={image.image_address} alt="" />
+                                        
+                                    )) }
+                                </ProjectImagesSection>
                                 {/* Description of project and tasks */}
                                 <p>
                                     {`${element.description}`}
@@ -30,11 +38,11 @@ const Projects = () => {
 
                                 {/* Displays the technologies used */}
                                 <p>
-                                {`${element.link}`}
+                                {`${element.technologies}`}
                                 </p>
                             </ProjectSection>
                     ))}
-                </section>
+                </ProjectContainer>
                 : <p>loading...</p>}
         </>
     )

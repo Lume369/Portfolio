@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-	padding: 20px;
-	background-color: lightgray;  
-    align-items: center;
+	display: flex;
 	justify-content: flex-start;
 
-	@media only screen and (max-width: 768px) {
-		display: flex;
-		position: fixed;
-	}
+	width: 100vw;
+	padding: 20px;
+	overflow: hidden;
+
+
+	@media only screen and (min-width: 768px) {
+		position: static;
+		align-items: center;
+		justify-content: space-around; 
+		background-color: lightgray;
+	};
 `;
 
 export default Nav;
