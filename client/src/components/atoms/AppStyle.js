@@ -5,6 +5,8 @@ const AppStyle = styled.section`
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
 `;
 
 export default AppStyle;

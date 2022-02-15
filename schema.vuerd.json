@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -62.49999751647319,
-    "scrollLeft": 0,
-    "zoomLevel": 1,
+    "scrollTop": -218.05554689080665,
+    "scrollLeft": -188.8888813831191,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": false,
       "columnComment": false,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "portfolio-db",
-    "canvasType": "@vuerd/builtin-sql-ddl",
+    "canvasType": "ERD",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -232,10 +232,10 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 25.0001,
           "top": 60.0003,
-          "zIndex": 6,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },

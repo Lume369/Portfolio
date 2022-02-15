@@ -5,14 +5,15 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/organisms/Footer";
 import AppStyle from "./components/atoms/AppStyle";
+import AppHeader from "./components/atoms/AppHeader";
 
 const App = () => {
 
 	return (
 		<AppStyle>
-			<header>
+			<AppHeader>
 				<Navbar/>
-			</header>
+			</AppHeader>
 
 			
 

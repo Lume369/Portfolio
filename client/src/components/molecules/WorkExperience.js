@@ -1,23 +1,22 @@
 import { useContext } from "react";
 import { context } from "../../context/APIProvider";
-import { myProviderContext } from "../../context/MyProvider";
 
 // Style
 import WorkImg from "../atoms/WorkExperience/WorkImg";
 import WorkSection from "../atoms/WorkExperience/WorkSection";
+import LeftArrow from "../organisms/LeftArrow";
 
 
 const WorkExperience = () => {
     const APIContext = useContext(context)
-    const {setShowContent} = useContext(myProviderContext);
 
     return (
         <>
             {APIContext.jobIsFetched
                 ? <section>
-                    <button type="button" className="btn-close" aria-label="Close" width='60px' onClick={() => setShowContent(false)} >X</button>
+                    <LeftArrow />
                     {APIContext.jobData.data.map((element, index) => (
-                            <WorkSection key={`${index}369`}>
+                            <WorkSection key={element.id}>
 
                                 {/* Job name */}
                                 <h3>
