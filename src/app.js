@@ -1,19 +1,18 @@
 const express = require('express');
 const app = express();
 const testRouter = require('./routes/testRouter');
-const usersRouter = require('./routes/usersRouter');
+const jobsRouter = require('./routes/jobsRouter');
 const projectRouter = require('./routes/projectRouter');
 const projectImageRouter = require('./routes/projectImageRouter');
 const path = require('path');
 
 // global middleware
-app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
 
 app.use('/api/', testRouter); // Handles GET requests to /api, sends back "API is running"
-app.use('/api/about', usersRouter);
-app.use('/api/jobs', usersRouter); // Handles GET request to /api/users, sends back everything in the DB users table
+app.use('/api/about', jobsRouter);
+app.use('/api/jobs', jobsRouter); // Handles GET request to /api/users, sends back everything in the DB users table
 app.use('/api/projects', projectRouter);
 app.use('/api/projectImages', projectImageRouter);
 
