@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const LeftArrowStyle = styled.div`
-
     position: absolute;
     top: 25px;
     width: 90%;
