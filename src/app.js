@@ -9,6 +9,7 @@ const path = require('path');
 // global middleware
 app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/api/', testRouter); // Handles GET requests to /api, sends back "API is running"
 app.use('/api/about', jobsRouter);
@@ -18,14 +19,14 @@ app.use('/api/projectImages', projectImageRouter);
 
 // Serve static assets if in production.
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
+	app.use(express.static(path.join('client/build')));
 	app.get('*', (req, res) => {
-		res.sendFile(path.resolve(__dirname,'client', 'build', 'index.html'))
+		res.sendFile(path.resolve(path.join(__dirname = 'client/build/index.html')))
 	});
 };
 
 app.get('/*', (req, res) => {
-	let url = path.join(__dirname, '../client/build', 'index.html');
+	let url = path.join(__dirname+'/client/public/index.html');
 	if (!url.startsWith('/app/')) // we're on local windows
 	  url = url.substring(1);
 	res.sendFile(url);
