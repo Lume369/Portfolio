@@ -25,11 +25,8 @@ if (process.env.NODE_ENV === 'production') {
 	});
 };
 
-app.get('/*', (req, res) => {
-	let url = path.join(__dirname+'/client/public/index.html');
-	if (!url.startsWith('/app/')) // we're on local windows
-	  url = url.substring(1);
-	res.sendFile(url);
+app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
 
 module.exports = app;
